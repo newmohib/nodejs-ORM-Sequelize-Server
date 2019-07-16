@@ -3,13 +3,13 @@
 <hr>
 
 # Installing CLI
-$ npm install --save sequelize-cli
+  $ npm install --save sequelize-cli
 
  # Bootstrapping
 
 To create an empty project you will need to execute init command
 
-$ npx sequelize-cli init
+  $ npx sequelize-cli init
 
 This will create following folders
 
@@ -22,16 +22,16 @@ This will create following folders
 
 # Let's create a model named User.
 
-$ npx sequelize-cli model:generate --name User --attributes firstName:string,lastName:string,email:string
+  $ npx sequelize-cli model:generate --name User --attributes firstName:string,lastName:string,email:string
 
 
 <div><strong>Running Migrations</strong></div>
-<div>$ npx sequelize-cli db:migrate</div>
+<div>  $ npx sequelize-cli db:migrate</div>
 
 <div><strong>Creating First Seed</strong></div>
-<div>$ npx sequelize-cli seed:generate --name demo-user</div>
+<div>  $ npx sequelize-cli seed:generate --name demo-user</div>
 <div><strong>Running Seeds</strong></div>
-<div>$ npx sequelize-cli db:seed:all</div>
+<div>  $ npx sequelize-cli db:seed:all</div>
 
 <div align="center"><strong>Nodejs Sequelize Server</strong></div>
 <div align="center">Iniutialize Sequelize</div>
