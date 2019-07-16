@@ -1,7 +1,7 @@
 var express = require('express');
 var cors = require('cors');
-var Sequelize = require('sequelize');
-var models = require("./models");
+// var Sequelize = require('sequelize');
+// var models = require("./models");
  
 var router = express.Router();
 router.use(cors())
@@ -18,7 +18,8 @@ router.post('/campaign',helloMiddlewares.isAuthorize, campaignController.createC
 //login
 router.post('/login', loginController.login);
 router.post('/signup', signupController.signup);
-router.get('/user', userController.fetchAll);
+router.get('/user-all', userController.fetchAll);
+router.get('/user-specific', userController.fetchOne);
 router.post('/token', helloMiddlewares.authorizeWithToken , tokenController.token);
 
 module.exports = router;
