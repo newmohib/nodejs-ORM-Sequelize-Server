@@ -26,12 +26,12 @@ $ npx sequelize-cli model:generate --name User --attributes firstName:string,las
 
 
 <div><strong>Running Migrations</strong></div>
-<div>npx sequelize-cli db:migrate</div>
+<div>$ npx sequelize-cli db:migrate</div>
 
 <div><strong>Creating First Seed</strong></div>
-<div> npx sequelize-cli seed:generate --name demo-user</div>
+<div>$ npx sequelize-cli seed:generate --name demo-user</div>
 <div><strong>Running Seeds</strong></div>
-<div>npx sequelize-cli db:seed:all</div>
+<div>$ npx sequelize-cli db:seed:all</div>
 
 <div align="center"><strong>Nodejs Sequelize Server</strong></div>
 <div align="center">Iniutialize Sequelize</div>
