@@ -1,6 +1,5 @@
 # Nodejs-ORM-Sequelize-Server
 
-<hr>
 
 # Installing CLI
   $ npm install --save sequelize-cli
