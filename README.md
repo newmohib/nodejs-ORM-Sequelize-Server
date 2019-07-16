@@ -33,5 +33,5 @@ $ npx sequelize-cli model:generate --name User --attributes firstName:string,las
 <div><strong>Running Seeds</strong></div>
 <div>npx sequelize-cli db:seed:all</div>
 
-<div align="center"><strong>Start your next react project in seconds</strong></div>
-<div align="center">A highly scalable, offline-first foundation with the best DX and a focus on performance and best practices</div>
+<div align="center"><strong>Nodejs Sequelize Server</strong></div>
+<div align="center">Iniutialize Sequelize</div>
