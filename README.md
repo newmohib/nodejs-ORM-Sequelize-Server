@@ -1,4 +1,4 @@
-# nodejs-ORM-Sequelize-Server
+# Nodejs-ORM-Sequelize-Server
 
 <hr>
 
