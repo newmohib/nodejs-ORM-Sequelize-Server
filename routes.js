@@ -20,6 +20,14 @@ router.post('/login', loginController.login);
 router.post('/signup', signupController.signup);
 router.get('/user-all', userController.fetchAll);
 router.get('/user-specific', userController.fetchOne);
+router.post('/create', userController.create);
+router.get('/findAndCountAll', userController.findAndCountAll);
+router.get('/findWithOr', userController.findWithOr);
+router.get('/findAllWithOrder', userController.findAllWithOrder);
+router.get('/max', userController.max);
+router.get('/countRecord', userController.countRecord);
+router.get('/sum', userController.sum);
+router.get('/multiModel', userController.multiModel);
 router.post('/token', helloMiddlewares.authorizeWithToken , tokenController.token);
 
 module.exports = router;
