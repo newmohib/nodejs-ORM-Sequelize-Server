@@ -18,6 +18,7 @@ router.post('/campaign',helloMiddlewares.isAuthorize, campaignController.createC
 //login
 router.post('/login', loginController.login);
 router.post('/signup', signupController.signup);
+router.get('/user-all-middleware', helloMiddlewares.nexModels , userController.fetchAll);
 router.get('/user-all', userController.fetchAll);
 router.get('/user-specific', userController.fetchOne);
 router.post('/create', userController.create);

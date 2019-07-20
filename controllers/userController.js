@@ -6,7 +6,8 @@ module.exports = {
 	//http://localhost:4000/fetchAll
 
 	fetchAll(req, res) {
-		models.User.findAll()
+		//console.log("request",req.body);
+		models.user.findAll()
 			.then(function (users) {
 				res.status(200).json(users);
 			})
@@ -15,7 +16,7 @@ module.exports = {
 			});
 	},
 	fetchOne(req, res) {
-		models.User.findAll({
+		models.user.findAll({
 			where: {
 				id: req.body.id
 			}
@@ -30,7 +31,7 @@ module.exports = {
 	create(req, res) {
 		//req.sanitize('firstName').escape();
 		let { firstName, lastName, email } = req.body
-		models.User.create({
+		models.user.create({
 			firstName: firstName,
 			lastName: lastName,
 			email: email,
@@ -45,7 +46,7 @@ module.exports = {
 	},
 	findAndCountAll(req, res) {
 		let { offset, limit } = req.body;
-		models.User.findAndCountAll({
+		models.user.findAndCountAll({
 			// where: {
 			// 	title: {
 			// 		[Op.like]: 'foo%'
@@ -67,7 +68,7 @@ module.exports = {
 	},
 	findWithOr(req, res) {
 		let { email } = req.body;
-		models.User.findOne({
+		models.user.findOne({
 			where: {
 				email: email,
 				// [Op.or]: [
@@ -86,7 +87,7 @@ module.exports = {
 	findAllWithOrder(req, res) {
 		let { orderBy } = req.body;
 		//DESC
-		models.User.findAll({
+		models.user.findAll({
 			order: [
 				['id', orderBy],
 			]
@@ -102,7 +103,7 @@ module.exports = {
 		let { maxFieldName } = req.body;
 		//min
 		//Op.gt
-		models.User.max(
+		models.user.max(
 			maxFieldName,
 			//{ where: { [maxFieldName]: { [Op.lt]: 4 } } }
 		)
@@ -114,7 +115,7 @@ module.exports = {
 			});
 	},
 	countRecord(req, res) {
-		models.User.count(
+		models.user.count(
 			{
 				where: { 'id': { [Op.gt]: 2 } }
 			}
@@ -131,7 +132,7 @@ module.exports = {
 		let { maxFieldName } = req.body;
 		//min
 		//Op.gt
-		models.User.sum(
+		models.user.sum(
 			maxFieldName
 			// ,{ where: { [ maxFieldName ]: { [Op.lt]: 4 } } }
 		)
@@ -144,7 +145,7 @@ module.exports = {
 	},
 	multiModel(req, res) {
 		let { maxFieldName } = req.body;
-		models.User.findAll({
+		models.user.findAll({
 			// include: [{
 			// 	model: Tool,
 			// 	as: 'Customers',

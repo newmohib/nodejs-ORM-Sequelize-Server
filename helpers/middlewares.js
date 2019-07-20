@@ -46,6 +46,12 @@ function authorizeWithToken(req, res, next) {
         return res.send("UnAuthorizedi!!!");
     }
 }
+
+function nexModels(req, res, next) {
+    req.body.name="mohibur"
+    return next()
+}
 //exports.myMiddleWar = myMiddleWareAndAllParser;
 exports.isAuthorize = isAuthorize;
 exports.authorizeWithToken = authorizeWithToken;
+exports.nexModels = nexModels;

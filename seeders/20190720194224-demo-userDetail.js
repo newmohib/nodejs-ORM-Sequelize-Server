@@ -9,8 +9,8 @@ module.exports = {
       phone: '01812334720',
       gender:'mail',
       birthDate: new Date(),
-      username: new Date(),
-      password: new Date(),
+      username: 'mohib',
+      password: '123456',
       createdAt: new Date(),
       updatedAt: new Date()
     }], {});
