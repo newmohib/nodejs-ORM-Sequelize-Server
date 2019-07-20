@@ -104,7 +104,7 @@ module.exports = {
 		//Op.gt
 		models.User.max(
 			maxFieldName,
-			{ where: { [maxFieldName]: { [Op.lt]: 4 } } }
+			//{ where: { [maxFieldName]: { [Op.lt]: 4 } } }
 		)
 			.then(function (max) {
 				res.status(200).json(max);
