@@ -47,11 +47,11 @@ function authorizeWithToken(req, res, next) {
     }
 }
 
-function nexModels(req, res, next) {
+function nextModels(req, res, next) {
     req.body.name="mohibur"
     return next()
 }
 //exports.myMiddleWar = myMiddleWareAndAllParser;
 exports.isAuthorize = isAuthorize;
 exports.authorizeWithToken = authorizeWithToken;
-exports.nexModels = nexModels;
+exports.nextModels = nextModels;
