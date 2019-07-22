@@ -6,6 +6,12 @@ module.exports = (sequelize, DataTypes) => {
     userDetailId: DataTypes.INTEGER
   }, {});
   user.associate = function(models) {
+
+    // user.belongsTo(models.userDetail, {
+		// 	foreignKey: {
+		// 		allowNull: false
+		// 	}
+		// });
   };
   return user;
 };
